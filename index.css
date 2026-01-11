@@ -1,7 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
+:root {
+  --page-background-color: hsl(212, 45%, 89%);
+  --card-background-color: hsl(0, 0%, 100%);
+  --card-title-color: hsl(218, 44%, 22%);
+  --card-message-color: hsl(216, 15%, 48%);
+}
+
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--page-background-color);
   justify-content: center;
   align-items: center;
   display: flex;
@@ -11,7 +18,7 @@ body {
 .card {
   width: 320px;
   height: 499px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--card-background-color);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -28,21 +35,21 @@ body {
 }
 
 .title {
-  font-family: Outfit;
+  font-family: Outfit, sans-serif;
   font-weight: bold;
   font-size: 24px;
   line-height: 120%;
   letter-spacing: 0px;
-  color: hsl(218, 44%, 22%);
+  color: var(--card-title-color);
 }
 
 .message {
-  font-family: Outfit;
-  font-weight: regular;
+  font-family: Outfit, sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.2px;
-  color: hsl(216, 15%, 48%);
+  color: var(--card-message-color);
 }
 
 html,
